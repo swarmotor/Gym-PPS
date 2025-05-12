@@ -22,7 +22,7 @@ Gym-PPS is a lightweight Predator-Prey Swarm environment seamlessly integrated i
 
 
 
-## Usage
+## Usage  部署
 
 Please note that the current version of Gym-PPS supports Python 3.8. Therefore, it is recommended to run the library within a Python 3.8 environment, which can be easily set up using a virtual environment such as `venv`.
 
@@ -52,7 +52,7 @@ A simulation window will pop up as follows:
 </table>
 
 
-## Simple Script to Start
+## Simple Script to Start 快速开始
 Using Gym-PPS is quite simple: 
 
 ```python
@@ -85,7 +85,7 @@ for step in range(100):
 
 
 
-## Customize Environment
+## Customize Environment 修改环境条件
 
 To customize the parameters of the environment, such as the number of predators and the dynamics mode, you can easily specify the desired values in the `custom_param.json` file, as shown below:
 
@@ -108,7 +108,7 @@ env.set_param('n_p', 10)
 
 
 
-## Customize Observation or Reward
+## Customize Observation or Reward 修改观测与奖励
 
 To customize your own observation or reward functions, modify the functions in `custom_env.py`:
 
@@ -147,7 +147,7 @@ Then you should add the following wrappers in your file which creates environmen
 env = MyReward(MyObs(env)) 
 ```    
 
-## Train Models
+## Train Models / 训练
 To train your own network, run `main.py` in NJP_algorithm folder. You can also customize your enviroment using the methods provided.
 
 Then your models will be loaded in models folder. To visualize your models effect, run `testmodel.py` in NJP_algorithm folder.
@@ -164,7 +164,7 @@ A trained model will be presented as follows:
   </tr>
 </table>
 
-## Parameter List
+## Parameter List 参数表
 
 Below is a list of the parameters that can be customized:
 
